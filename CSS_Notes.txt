@@ -1,0 +1,35 @@
+1) Understanding CSS :
+CSS (Casecading Style Sheet)
+
+2) Making CSS File :
+Style.css
+
+3) Understanding Linking :
+<link rel="stylesheet" href="style.css">
+Write this in the HTML file inside the head tag.
+
+4)CSS Boilerplate :
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100% ;
+}
+This is Boilerplate of the CSS.
+
+5) Understanding CSS writing way :
+i) If you write # this is called id.
+ii) If you write . this is called class.
+iii) If you write h1{} this is called tag.
+
+6) Understanding width and height :
+width: 20%;
+height: 60%;
+Always make sure that width & height ends with %.
+
+7) Understanding units,px and % :
+px, pixel is the small units.
