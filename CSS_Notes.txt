@@ -1,5 +1,5 @@
 1) Understanding CSS :
-CSS (Casecading Style Sheet)
+CSS (Casecading Style Sheet).
 
 2) Making CSS File :
 Style.css
@@ -32,4 +32,113 @@ height: 60%;
 Always make sure that width & height ends with %.
 
 7) Understanding units,px and % :
-px, pixel is the small units.
+px, pixel is the small values.
+
+8)Understanding Margin Padding :
+* Margin is the space outside the element.
+* Padding is the space inside element.
+i)If you want margin all side use this,
+#main{
+ width :100px;
+ height: 100px;
+ background-color: red;
+ margin:20px;
+}
+ii) If you want margin at left use this,
+margin-left:20px;
+
+iii) If you want margin at top use this,
+margin-top:20px;
+
+iv) If you want margin at right use this,
+margin-right:20px;
+
+iv) If you want margin at bottom use this,
+margin-bottom:20px;
+
+Important Note :
+* We can use margin directions in one margin,
+margin:20px 30px 40px 10px;
+the first value is top.
+the second value is bottom.
+the third value is left.
+the fourth value is right.
+
+* We can use margin directions in another way,
+margin:30px 40px;
+the first value is top & bottom.
+the second value is right & left.
+
+9) Understanding background image and things related to it :
+i) To set background image we use,
+background-image: url(link of the image address);
+ii) To get proper image we use,
+background-size: cover;
+iii) If the image is big we can set its possition by using this,
+background-possition: center || left || right ;
+
+10) Understanding possition absolute :
+IMP Note:
+* Without possition we cannot set top or left.
+#car2{
+    width: 140px;
+    height:120px;
+    background-color: aqua;
+    position: absolute;
+    left:100%
+}
+
+11) Understanding possition relative :
+IMP Note :
+If you want to move #container1 inside the #container2 you should use the possition relative to container2,
+#container2{
+    height:300px;
+    width:300px;
+    background-color: red;
+    position: relative;
+}
+
+#container1{
+    position: absolute;
+   left:40%;
+    width:100px;
+    height:100px;
+    background-color: blue;
+}
+
+12) Understanding flexbox :
+i) We Use flex when we want element side by side inside the box element.
+#parent{
+    width:500px;
+    height:500px;
+    background-color: black;
+    display: flex;
+}
+
+#child1{
+    width:200px;
+    height:200px;
+    background-color: red;
+}
+
+#child2{
+    width:150px;
+    height:150px;
+    background-color: green;
+}
+#child3{
+    width:100px;
+    height:100px;
+    background-color: rgb(3, 61, 250);
+}
+
+ii) For width i.e left & right we use justify-content.
+justify-content:center;
+justify-content:start; 
+justify-content:end;
+justify-content:space-between;
+justify-content:space-around;
+iii) For Height i.e top & bottom we use alighn-item.
+align-items: center;
+align-items: start;
+align-items: end;
